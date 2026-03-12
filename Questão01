@@ -1,0 +1,24 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    cadeia nome
+    escreva("Olá aluno, qual seu nome?:\n")
+    leia(nome)
+    limpa()
+    real nota1,nota2,nota3
+    escreva("Bem vindo "+nome+", Por favor, entre suas 3 notas (pressione enter após cada nota):\n")
+    leia(nota1,nota2,nota3)
+    limpa()
+    real media = (nota1+nota2+nota3)/3
+    mat.arredondar(media, 100)
+    escreva("Média = ",media)
+    se (media >= 6)
+    {
+      escreva("\nSituação = Aprovado!")
+    }
+    senao
+    {
+      escreva("\nSituação = Reprovado!")
+    }
+  }
+}
