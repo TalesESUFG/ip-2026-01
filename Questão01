@@ -10,7 +10,7 @@ programa {
     leia(nota1,nota2,nota3)
     limpa()
     real media = (nota1+nota2+nota3)/3
-    mat.arredondar(media, 100)
+    media = mat.arredondar(media, 2)
     escreva("Média = ",media)
     se (media >= 6)
     {
