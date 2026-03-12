@@ -1,4 +1,5 @@
 programa {
+  inclua biblioteca Matematica --> mat
   funcao inicio() {
     real conta
     real consumo
@@ -10,18 +11,21 @@ programa {
     {
       real residencial = 5.00
       real valor1 = (consumo * 0.05)+residencial
+      mat.arredondar(valor1, 100)
       escreva("Conta: ",conta,"\nValor da conta: ",valor1)
   }
     senao se(tipo == "c")
     {
       real comercial = 500.00
       real valor2 = (consumo * 0.25)+comercial
+      mat.arredondar(valor2, 100)
       escreva("Conta: ",conta,"\nValor da conta: ",valor2)
     }
     senao se(tipo == "i")
     {
       real industrial = 800.00
       real valor3 = (consumo * 0.04)+industrial
+      mat.arredondar(valor3, 100)
       escreva("Conta: ",conta,"\nValor da conta: ",valor3)
     }
   }
