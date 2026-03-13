@@ -7,25 +7,26 @@ programa {
     escreva("Qual sua conta, consumo e tipo?(Digite a incial do tipo em minúsculo, aperte enter a cada entrada)\n")
     leia(conta,consumo,tipo)
     limpa()
+    //por algum motivo, o ou não está funcionando, logo estou pedindo as letras em minúsculo.
     se(tipo == "r")
     {
       real residencial = 5.00
       real valor1 = (consumo * 0.05)+residencial
-      mat.arredondar(valor1, 100)
+      valor1 = mat.arredondar(valor1, 2)
       escreva("Conta: ",conta,"\nValor da conta: ",valor1)
   }
     senao se(tipo == "c")
     {
       real comercial = 500.00
       real valor2 = (consumo * 0.25)+comercial
-      mat.arredondar(valor2, 100)
+      valor2 = mat.arredondar(valor2, 2)
       escreva("Conta: ",conta,"\nValor da conta: ",valor2)
     }
     senao se(tipo == "i")
     {
       real industrial = 800.00
       real valor3 = (consumo * 0.04)+industrial
-      mat.arredondar(valor3, 100)
+      valor3 = mat.arredondar(valor3, 2)
       escreva("Conta: ",conta,"\nValor da conta: ",valor3)
     }
   }
