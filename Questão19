@@ -1,7 +1,6 @@
 programa
 {
-	
-funcao inicio()
+	funcao inicio()
 	{
 		real k
 		escreva("Escreva um número natural e maior que 1: ")
