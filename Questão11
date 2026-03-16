@@ -1,0 +1,19 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+	funcao inicio()
+	{
+		inteiro n
+		escreva("Qual o número que você deseja saber se é divisível por 3 e 5? ")
+		leia(n)
+		limpa()
+		se (n%3==0 e n%5==0)
+		{
+			escreva("O número é divisível")
+		}
+		senao
+		{
+			escreva("O número não é divisível")
+		}
+	}
+}
