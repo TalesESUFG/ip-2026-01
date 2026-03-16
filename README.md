@@ -1,1 +1,1 @@
-Todas a atividades estão organizadas nas branchs.
+Todas a atividades estão organizadas nas branches.
