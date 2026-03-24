@@ -1,20 +1,21 @@
 package main
 
-import "fmt"
+import f "fmt"
 
 func main() {
-	fmt.Println("Qual é o tamanho dos lados?")
+	f.Println("Qual é o tamanho dos lados?")
 	var l1, l2, l3 float64
-	fmt.Scan(&l1, &l2, &l3)
+	f.Scan(&l1, &l2, &l3)
+	//Algoritmo de valores
 	if l1+l2 > l3 && l1+l3 > l2 && l2+l3 > l1 {
 		if l1 > l2 && l1 < l3 || l2 < l1 && l2 > l3 || l3 < l1 && l3 > l2 {
-			fmt.Println("Escaleno")
+			f.Println("Escaleno")
 		} else if l1 != l2 && l1 == l3 || l3 != l1 && l3 == l2 {
-			fmt.Println("Isóceles")
+			f.Println("Isóceles")
 		} else {
-			fmt.Println("Equilátero")
+			f.Println("Equilátero")
 		}
 	} else {
-		fmt.Println("Triângulo inválido!")
+		f.Println("Triângulo inválido!")
 	}
 }
