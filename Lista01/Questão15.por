@@ -1,0 +1,35 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro n
+		escreva("Escreva um número inteiro para os quadrados de pares: ")
+		leia(n)
+		limpa()
+		se (n <= 5)
+		{
+			escreva("Número inválido.")
+		}
+		senao se (n > 2000)
+		{
+			escreva("Número inválido")
+		}
+		senao
+		{
+			inteiro i = 1
+			enquanto (i <= n)
+			{
+				se (i%2 == 0)
+				{
+					inteiro q = (i*i)
+					escreva(i,"^",i,": ",q," ")
+					i = i+1
+				}
+				senao
+				{
+					i = i+1
+				}
+			}
+		}
+	}
+}
