@@ -10,16 +10,16 @@ func main() {
 	f.Scan(&num)
 	if num < 10 && num > 0 {
 		num = num * 0.7
-		f.Println("O lucro de venda é:", num)
+		f.Printf("O lucro de venda é: %.2f\n", num)
 	} else if num >= 10 && num < 30 {
 		num = num * 0.5
-		f.Println("O lucro de venda é:", num)
+		f.Printf("O lucro de venda é: %.2f\n", num)
 	} else if num >= 30 && num < 50 {
 		num = num * 0.4
-		f.Println("O lucro de venda é:", num)
+		f.Printf("O lucro de venda é: %.2f\n", num)
 	} else if num >= 50 {
 		num = num * 0.3
-		f.Println("O lucro de venda é:", num)
+		f.Printf("O lucro de venda é: %.2f\n", num)
 	} else {
 		f.Println("Número inválido!")
 	}
