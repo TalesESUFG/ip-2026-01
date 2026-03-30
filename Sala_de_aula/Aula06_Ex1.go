@@ -13,7 +13,7 @@ func main() {
         m     float64
     )
     for i := 0; i < numNotas; i++ {
-        f.Printf(Informe a nota%d : ", i)
+        f.Printf("Informe a nota%d : ", i)
         f.Scan(&nota[i])
         soma += nota[i]
     }
