@@ -10,12 +10,12 @@ func main() {
 		con   string
 		op    float64
 	)
-	f.Println("Olá! Qual é o valor do produto e o método de pagamento?(A vista e credito, dinheiro, cheque; ou parcela2x e parcela3x)")
+	f.Println("Olá! Qual é o valor do produto e o método de pagamento?(Credito, dinheiro, cheque; ou parcela2x e parcela3x)")
 	f.Scan(&valor, &con)
-	if con == "A vista" || con == "a vista" && con == "Cheque" || con == "cheque" || con == "Dinheiro" || con == "dinheiro" {
+	if con == "Cheque" || con == "cheque" || con == "Dinheiro" || con == "dinheiro" {
 		op = valor * 0.9
 		f.Printf("O valor da compra será de : %.2f\n", op)
-	} else if con == "A vista" || con == "a vista" && con == "Cartão" || con == "cartão" {
+	} else if con == "Cartão" || con == "cartão" {
 		op = valor * 0.95
 		f.Printf("O valor da compra será de : %.2f\n", op)
 	} else if con == "Parcela2x" || con == "parcela2x" {
