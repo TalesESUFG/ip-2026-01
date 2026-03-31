@@ -14,7 +14,7 @@ func main() {
     }
     for i := 9; i >= 0; i-- {
         if i == 0 {
-        f.Print(num[i], ". ")
+            f.Print(num[i], ". ")
         } else {
             f.Print(num[i], ", ")
         }
