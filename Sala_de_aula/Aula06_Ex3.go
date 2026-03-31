@@ -12,7 +12,7 @@ func main() {
         f.Printf("Informe o %d valor : ", i+1)
         f.Scan(&num[i])
     }
-    for i := 10; i >= 0; i-- {
-        f.Println(i, " ")
+    for i := 9; i >= 0; i-- {
+        f.Println(num[i], " ")
     }
 }
