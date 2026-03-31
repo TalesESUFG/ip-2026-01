@@ -13,6 +13,10 @@ func main() {
         f.Scan(&num[i])
     }
     for i := 9; i >= 0; i-- {
-        f.Println(num[i], " ")
+        if i == 0 {
+        f.Print(num[i], ". ")
+        } else {
+            f.Print(num[i], ", ")
+        }
     }
 }
