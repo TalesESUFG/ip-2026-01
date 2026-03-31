@@ -19,7 +19,7 @@ func main() {
     }
     m = 0
     for i, v := range nota {
-        f.Printf("Nota %d = %f\n", i, v)
+        f.Printf("Nota %d = %.2f\n", i, v)
         m = m + v
     }
     media = m / float64(NumNotas)
