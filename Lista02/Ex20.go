@@ -25,8 +25,8 @@ func main() {
 		op = (valor * 1.1) / 3
 		f.Printf("O valor da compra será de 3x : %.2f\n", op)
 	} else if valor == 0 {
-		f.Println("Erro! Valor inválido")
+		f.Println("Erro! Valor inválido.")
 	} else {
-		f.Println("Erro! Método de pagamento inválido")
+		f.Println("Erro! Método de pagamento inválido.")
 	}
 }
