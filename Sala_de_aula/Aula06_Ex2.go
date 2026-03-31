@@ -15,5 +15,5 @@ func main() {
         f.Scan(&num[i])
         soma += num[i]
     }
-    f.Printf("a soma dos %d números é : %d\n", numint, soma)
+    f.Printf("A soma dos %d números é : %d\n", numint, soma)
 }
