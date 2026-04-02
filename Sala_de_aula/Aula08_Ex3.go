@@ -8,8 +8,12 @@ func main() {
 	var x int
 	f.Println("Escreva 1 números inteiro para calcular seu fatorial.")
 	f.Scan(&x)
-	l := fatorial(x)
-	f.Printf("O fatorial é: %d\n", l)
+	if x > 20 {
+		f.Println("Erro!")
+	} else {
+		l := fatorial(x)
+		f.Printf("O fatorial é: %d\n", l)
+	}
 }
 func fatorial(num1 int) int {
 	var s int = 1
