@@ -5,9 +5,7 @@ import (
 )
 
 func main() {
-	var (
-		x int
-	)
+	var x int
 	f.Println("Escreva 1 números inteiro para calcular seu fatorial.")
 	f.Scan(&x)
 	l := fatorial(x)
