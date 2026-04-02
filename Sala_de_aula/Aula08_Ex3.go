@@ -14,7 +14,7 @@ func main() {
 func fatorial(num1 int) int {
 	var s int = 1
 	for num1 > 1 {
-		s = num1 * s
+		s *= num1
 		num1--
 	}
 	return s
