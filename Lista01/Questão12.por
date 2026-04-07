@@ -6,7 +6,7 @@ programa
 		escreva("Qual o número de horas com a charrete? ")
 		leia(h)
 		limpa()
-		inteiro cal1 = (h/3)*10
+		inteiro cal1 = ((h-(h%3))/3)*10
 		inteiro v = (h%3)*5
 		inteiro cal2 = cal1+v
 		escreva("O valor a pagar é: ",cal2)
