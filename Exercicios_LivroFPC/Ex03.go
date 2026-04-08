@@ -1,5 +1,7 @@
 package main
+
 import f "fmt"
+
 func main() {
 	var (
 		n1 float64
@@ -10,7 +12,7 @@ func main() {
 	if n2 <= 0 {
 		f.Println("ERRO! Divisão por zero ou negativo.")
 	} else {
-		n1/=n2
+		n1 /= n2
 		f.Printf("O resultado da divisão é : %.2f\n", n1)
 	}
 }
