@@ -2,7 +2,7 @@ package main
 
 import f "fmt"
 
-func fac(x int) int {
+func fac3(x int) int {
 	if x == 0 {
 		return 1
 	}
