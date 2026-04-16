@@ -2,12 +2,12 @@ package main
 
 import f "fmt"
 
-func reverso(s,e int, q []int) {
-  if s>e{
+func reverso(s, e int, q []int) {
+  if s > e{
     return
   }
-  q[s], q[e] = q[e],q[s]
-  reverso(s+1, e-1,q)
+  q[s], q[e] = q[e], q[s]
+  reverso(s+1, e-1, q)
 }
 func main() {
 	var e int
@@ -22,6 +22,6 @@ func main() {
 	}
 	s := 0
 	en := len(q)-1
-	reverso(s,en,q)
+	reverso(s, en , q)
 	f.Println(q)
 }
