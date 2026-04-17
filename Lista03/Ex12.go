@@ -15,9 +15,14 @@ func main() {
 	s := 0.0
 	for i := 1; i <= 20; i++ {
 		r := n / float64(fac2(i))
-		s += r
-		if i == 20 {
-			f.Printf("O somátorio é : %.20f\n", s)
+		if i == 1 {
+			s += n
+		} else if i%2 == 0 {
+			s += r
+		} else {
+			s -= r
 		}
+
 	}
+	f.Println("O somatório é :", s)
 }
