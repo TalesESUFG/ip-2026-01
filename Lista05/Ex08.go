@@ -1,11 +1,18 @@
 package main
-import f "fmt"
+
+import (
+	f "fmt"
+	m "math"
+)
+
 func main() {
-	var n,s[] float64
-	for i := 0, i < 15; i++ {
-		var r float64
-		f.Printf("Digite o %dº número : ")
+	var s []float64
+	for i := 0; i < 15; i++ {
+		var r, rs float64
+		f.Printf("Digite o %dº número : ", i+1)
 		f.Scan(&r)
-		n = append(n, r)
+		rs = m.Sqrt(r)
+		s = append(s, rs)
 	}
+	f.Print(s)
 }
