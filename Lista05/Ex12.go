@@ -3,8 +3,8 @@ package main
 import f "fmt"
 
 func main() {
-	var l1, l2 []float64
-	for i := 0; i < 15; i++ {
+	var l1 []float64
+	for i := range 15 {
 		var l float64
 		f.Printf("Digite a nota do %dº aluno : ", i+1)
 		f.Scan(&l)
@@ -14,12 +14,22 @@ func main() {
 		}
 		l1 = append(l1, l)
 	}
-	for i := 0; i < len(l1); i++ {
-		for y := len(l1) - 1; y > 0; y-- {
-			if l1[i] == l1[y] {
-				l2 = append(l2, l1[i])
+	m := make(map[float64]int)
+	for _, i := range l1 {
+		m[i] = m[i] + 1
+	}
+	for i := range l1 {
+		for y := i + 1; y < len(l1); y++ {
+			if l1[y] == l1[i] {
+				l1[i] = 0
 			}
 		}
 	}
-	f.Print(l2)
+	for i := range l1 {
+		if m[l1[i]] > 1 {
+			r := (float64(m[l1[i]]) / float64(len(l1))) * 100
+			f.Printf("\nA nota %.2f repetiu %d vezes, e sua frequência relativa é : %.2f por cento", l1[i], m[l1[i]], r)
+		}
+	}
+
 }
