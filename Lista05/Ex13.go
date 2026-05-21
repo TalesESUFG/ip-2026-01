@@ -63,7 +63,7 @@ func main() {
 	)
 	f.Print("Quantos funcionários?(acima de 3) ")
 	f.Scan(&q)
-	for i := 0; i < q; i++ {
+	for i := range q {
 		var n int
 		f.Printf("Qual o número do %dº empregado? ", i+1)
 		f.Scan(&n)
