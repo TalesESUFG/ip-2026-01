@@ -33,7 +33,7 @@ func main() {
 			}
 			if re == "y" || re == "Y" {
 				var resp int
-				f.Print("Qual vaga? ")
+				f.Print("Qual vaga (número)? ")
 				f.Scan(&resp)
 				if resp > 24 {
 					f.Print("Erro! vaga inválida.\n")
@@ -72,7 +72,7 @@ func main() {
 			}
 			if re == "y" || re == "Y" {
 				var resp int
-				f.Print("Qual vaga? ")
+				f.Print("Qual vaga (número)? ")
 				f.Scan(&resp)
 				if resp > 24 {
 					f.Print("Erro! vaga inválida.\n")
